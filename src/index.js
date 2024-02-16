@@ -1,13 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
+import { CartProvider, LandingPageProvider, UserProvider } from "./Context";
+import { NotificationProvider } from "./Context/NotificationContext/NotificationContext";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <UserProvider>
+        <CartProvider>
+          <NotificationProvider>
+            <LandingPageProvider>
+              <App />
+            </LandingPageProvider>
+          </NotificationProvider>
+        </CartProvider>
+      </UserProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -1,0 +1,41 @@
+.scroll-to {
+  cursor: pointer;
+}
+
+.cart-wrapper {
+  position: relative;
+  transition: 0.3s;
+}
+
+.cart-wrapper:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+.count-wrapper {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.logo {
+  width: 60px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 10vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 100vw;
+    margin-top: 10px;
+    height: auto;
+  }
+}

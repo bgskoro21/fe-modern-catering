@@ -1,0 +1,80 @@
+.kategori-nav {
+  background: linear-gradient(to right, #ed213a, #93291e);
+  border-radius: 40px;
+  height: 60px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.list-kategori {
+  border-radius: 40px;
+  color: white;
+  padding: 0 30px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.list-kategori:hover {
+  background: linear-gradient(to right, #f85032, #e73827);
+  color: white;
+  opacity: 0.8;
+}
+
+.bg-reds {
+  background: linear-gradient(to right, #f85032, #e73827);
+  color: white;
+}
+
+.card-custom {
+  transition: 0.3s;
+}
+
+.card-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text-kategori {
+  transition: 0.1s;
+}
+
+.text-kategori:hover {
+  color: #ed213a;
+}
+
+.text-paket {
+  font-size: 14px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.filter-wrapper {
+  flex: 0 0 auto;
+  width: auto;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.filter-wrapper:hover,
+.filter-aktif {
+  background-color: #ed213a;
+  color: white;
+}
+
+.kategori-text {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .text-paket {
+    font-size: 14px;
+  }
+  .kategori-text {
+    font-size: 10px;
+  }
+}

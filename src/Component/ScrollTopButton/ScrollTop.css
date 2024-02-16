@@ -1,0 +1,50 @@
+.button-wrapper {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  z-index: 999;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: rgb(83, 0, 0);
+}
+
+.button-wrapper.inActive {
+  display: none;
+  animation: fadeOut 0.3s;
+}
+
+.button-wrapper:hover {
+  opacity: 0.8;
+}
+
+.button-wrapper.active {
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+    transform: scale(2) rotate(0);
+    background-color: rgb(255, 183, 183);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+    background-color: rgb(83, 0, 0);
+  }
+}

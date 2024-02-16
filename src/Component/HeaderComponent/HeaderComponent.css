@@ -1,0 +1,54 @@
+.headers {
+  background: linear-gradient(to right, #ed213a, #93291e);
+}
+
+/* .cart-wrapper {
+  position: relative;
+}
+.count-wrapper {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  right: 3px;
+} */
+
+.link-header:hover {
+  opacity: 0.8;
+}
+
+.notification-count {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -5px;
+  left: -10px;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.icon:hover {
+  opacity: 0.5;
+}
+
+.link-header {
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+.amount-notifications {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+  right: 82px;
+  top: -3px;
+  position: absolute;
+}

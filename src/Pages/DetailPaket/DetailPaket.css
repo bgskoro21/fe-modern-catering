@@ -1,0 +1,114 @@
+.line {
+  height: 5px;
+  width: 100%;
+}
+.badge {
+  cursor: pointer;
+}
+.border-red {
+  border: 3px solid rgb(163, 0, 0);
+  padding: 0;
+}
+.opsi-menu {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.border-grey {
+  border: 1px solid rgb(206, 206, 206);
+  background-color: white;
+}
+.opsi-menu:hover {
+  border: 1px solid rgb(163, 0, 0);
+  color: rgb(163, 0, 0);
+}
+.selected,
+.opsi-menu.selected:hover {
+  border: 1px solid rgb(163, 0, 0);
+  background-color: rgb(163, 0, 0);
+  color: white;
+}
+
+.option-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.fade-in {
+  animation: fade 0.8s ease;
+}
+
+.img-hero {
+  height: 450px;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.option-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.option-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.insert-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  font-size: 25px;
+  color: white;
+  position: fixed;
+  bottom: 0;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .option-img {
+    width: 50px;
+    height: 50px;
+  }
+  .column-gambar {
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  #description {
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  .img-hero {
+    height: 300px;
+    border-radius: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

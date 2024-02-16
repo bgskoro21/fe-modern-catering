@@ -1,0 +1,14 @@
+.link-akun {
+  list-style: none;
+  margin: 10px 28px;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.akun {
+  cursor: pointer;
+}

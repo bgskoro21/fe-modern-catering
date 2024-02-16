@@ -1,0 +1,49 @@
+.rating {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating.sm {
+  justify-content: start;
+}
+
+.star {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-image: url("/src/assets/img/Bintang.png"); /* Ganti dengan URL gambar bintang kosong */
+  background-size: cover;
+  cursor: pointer;
+}
+
+.star.sm {
+  width: 20px;
+  height: 20px;
+  background-image: url("/src/assets/img/bintangsmnofill.png"); /* Ganti dengan URL gambar bintang kosong */
+  background-size: cover;
+  cursor: auto;
+}
+
+.star.sm .star.active {
+  background-image: url("/src/assets/img//bintangsm.png");
+}
+
+.star:hover {
+  filter: drop-shadow(0 0 10px rgb(255, 196, 0, 0.8));
+}
+
+.star.active {
+  background-image: url("/src/assets/img/BintangFilled.png"); /* Ganti dengan URL gambar bintang terisi */
+}
+
+@media (max-width: 768px) {
+  .star,
+  .star.active {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,20 @@
+import Picture1 from "./galeri/1.jpeg";
+import Picture2 from "./galeri/2.jpeg";
+import Picture3 from "./galeri/3.jpeg";
+import Picture4 from "./galeri/4.jpeg";
+import Picture5 from "./galeri/5.jpeg";
+import Picture6 from "./galeri/6.jpeg";
+import Picture7 from "./galeri/7.jpeg";
+import Picture8 from "./galeri/8.jpeg";
+import Picture9 from "./galeri/9.jpeg";
+import LogoRed from "./img/Logo-red.jpeg";
+import Logo from "./img/Logo.png";
+import Prasmanan from "./img/Prasmanan.jpeg";
+import Makanan from "./img/Makanan.jpeg";
+import Panstop from "./img/Panstop.jpeg";
+import Karyawan from "./img/Karyawan.jpeg";
+import WhatsAppButton from "./img/WhatsAppButton.png";
+import Abi from "./img/Abi.jpeg";
+import dummy from "./img/gambar dummy.png";
+
+export { Picture1, Picture2, Picture3, Picture4, Picture5, Picture6, Picture7, Picture8, Picture9, LogoRed, Logo, Prasmanan, Makanan, Panstop, Karyawan, WhatsAppButton, Abi, dummy };
